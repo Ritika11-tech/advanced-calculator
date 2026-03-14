@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Advanced Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="calculator">
+
+<input type="text" id="result" readonly>
+
+<div class="buttons">
+
+<button onclick="press(this,'7')">7</button>
+<button onclick="press(this,'8')">8</button>
+<button onclick="press(this,'9')">9</button>
+<button onclick="press(this,'/')">÷</button>
+
+<button onclick="press(this,'4')">4</button>
+<button onclick="press(this,'5')">5</button>
+<button onclick="press(this,'6')">6</button>
+<button onclick="press(this,'*')">×</button>
+
+<button onclick="press(this,'1')">1</button>
+<button onclick="press(this,'2')">2</button>
+<button onclick="press(this,'3')">3</button>
+<button onclick="press(this,'-')">−</button>
+
+<button onclick="press(this,'0')" class="zero">0</button>
+<button onclick="press(this,'.')">.</button>
+<button onclick="calculate()" class="equal">=</button>
+<button onclick="press(this,'+')">+</button>
+
+<button onclick="clearDisplay()" class="clear">C</button>
+<button onclick="deleteLast()">DEL</button>
+
+</div>
+
+</div>
+
+<div class="history">
+
+<h3>History</h3>
+<ul id="historyList"></ul>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
